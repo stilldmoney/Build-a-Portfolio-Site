@@ -12,6 +12,16 @@ body {
     font-weight: 300;
 }
 
+footer {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    color: #747704;
+    font-weight: 300;
+    font-size: 1em;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
 .text-muted {
     color: #8C8888;
 }
@@ -92,10 +102,15 @@ div#social-sm {
     margin-left: 15vw;
     margin-right: 15vw;    
     }
-    .cont-hdr, .cont-body, cont-hdr, cont-body {
+    .cont-hdr, cont-hdr {
     max-width: 70vw;
     margin-left: 15vw;
     margin-right: 15vw;      
+    }
+    .cont-body, cont-body {
+    max-width: 75vw;
+    margin-left: 15vw;
+    margin-right: 18vw;      
     }
 }
 
