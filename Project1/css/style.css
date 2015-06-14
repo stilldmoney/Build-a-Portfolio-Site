@@ -1,8 +1,11 @@
-img, embed, object, video {
+img, 
+embed, 
+object, 
+video {
     max-width: 100vw;
-    margin: 0vw auto;
+    margin: 0 auto;
     align-content: center;
-    box-shadow: 0px 10px 25px #888888;
+    box-shadow: 0 10px 25px #888;
 }
 
 body {
@@ -17,7 +20,7 @@ footer {
     color: #747704;
     font-weight: 300;
     font-size: 1em;
-    margin: 0vw 10vw;
+    margin: 0 10vw;
 }
 
 .text-muted {
@@ -40,79 +43,85 @@ footer {
 
 .hr { 
     display: block;
-    margin-top: 0.5em auto 0.5em;
+    margin: 0.5em auto 0.5em;
     border-style: solid;
     border-width: 2px;
     border-color: #bcbbbb;
     color: #bcbbbb;
 } 
 
-.nav-a, button{
-    min-height: 48px;
-    min-width: 48px;
-}
-
-[class*="zocial-"]:before {
-    color: black;
-    display: inline-block;
-    font-family: "zocial", sans-serif;
-    text-shadow: 3px 3px 3px #aaa;
-    width: 2em;
-}
-
-div#social a {
-    margin: 0 1em 0 0;
-}
-
-div#social a:last-of-type {
-    margin: 0;
-}
-
-div#social {
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-}
-
-div#social-sm {
-    margin: 0 auto;
-    width: 40%;
-    text-align: center;
-}
-
 @media screen and (max-width: 2000px) {
-    social-sm, .social-sm {
-    display: none;
-    transition: 0.5s;
-    }
-    container, .container {
-    margin: 0 auto;
+    title-hd, .title-hd {
+    margin: 0 auto 0 5%;
     max-width: 70vw;
     }
     img-banner, .img-banner {
-    margin: 0 16vw;   
-    max-width: 70vw;
+    margin: 0 5% auto 5%;
+    max-width: 1110px;
+    min-width: 400px;
     max-height: 17vw;
     }
     .cont-hdr, cont-hdr {
-    margin: 0 15vw;      
+    margin: 0 5% auto 5%;
     max-width: 70vw;
     }
     .cont-body, cont-body {
-    margin: 0 18vw 0 15vw;   
-    max-width: 75vw;
+    margin: 0 5% auto 4%;  
+    max-width: 70vw;
     }
 }
 
 @media screen and (max-width: 991px) {
-    h1,.h1, title-super, .title-super {
-    margin: 2em 0 0 35%;
-    font-size: 30px; 
+    h1, .h1, title-super, .title-super {
+    margin: -40px 0 0 20vw;
+    font-size: 26px; 
+    width: 80%;
+    text-align: right;
+    }
+    title-sub, .title-sub {
+    margin: 0 0 0 20vw;
+    font-size: 20px;
+    width: 80%;
+    }
+    title-hd, .title-hd {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    title-logo, .title-logo {
+    margin-top: 2.5em;
+    width: 70%;
+    }
+    .cont-body, cont-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+    }
+    .specs {
+    max-width: 600px;
+    min-width: 350px;
+    margin: 0 15vw;
+    }
+    .img-banner, img-banner {
+    margin: 0 auto 0 40px;
+    max-width: 700px;
+    min-width: 650px;
+    }
+    h3, .h3, p, .p {
+    font-size: 1.5em;
+    }
+}   
+
+@media screen and (max-width: 765px) {
+    h1, .h1, title-super, .title-super {
+    margin: -50px 0 5px 20vw;
+    font-size: 24px; 
     width: 100%;
     text-align: right;
     }
     title-sub, .title-sub {
-    margin: 1em 0 0 35%;
+    margin: 0 0 0 20vw;
+    font-size: 18px;
     width: 100%;
     }
     title-hd, .title-hd {
@@ -121,67 +130,26 @@ div#social-sm {
     }
     title-logo, .title-logo {
     margin-top: 2.5em;
+    width: 75%;
     }
-    .cont-hdr, .cont-body, cont-hdr, cont-body {
+    .cont-body, cont-body {
     display: flex;
     flex-wrap: wrap;
-    margin: 0.5em auto;
+    margin: 0 auto;
     align-content: center;
     }
-    img-responsive, .img-responsive {
-    width: 21vw;
+    .specs {
+    max-width: 600px;
+    min-width: 350px;
+    margin: 0 15vw;
+    }
+    .img-banner, img-banner {
+    margin: 0 auto 0 40px;
+    max-width: 700px;
+    min-width: 650px;
     }
     h3, .h3, p, .p {
-    font-size: 1.1em;
-    }
-    div#social {
-    margin: 0 auto;
-    width: 50vw;
-    text-align: center;
-    }
-    social-sm, .social-sm {
-    display: none;
-    }
-}   
-
-@media screen and (max-width: 765px) {
-    h1,.h1, title-super, .title-super {
-    margin: 2em 0 0 30%;
-    font-size: 24px; 
-    width: 100%;
-    text-align: right;
-    }
-    title-sub, .title-sub {
-    margin: 1em 0 0 30%;
-    width: 100%;
-    }
-    title-logo, .title-logo {
-    width: 100%;
-    }
-    title-hd, .title-hd {
-    display: flex;
-    flex-wrap: wrap;
-    }
-    h2, .h2 {
-    font-size: 22px;
-    }
-    h3, .h3 {
-    width: auto;
-    font-size: 15px;
-    }
-    img-banner, .img-banner { 
-    margin: 0 14vw;
-    width: 90vw;
-    }
-    img-responsive, .img-responsive {
-    width: 70vw;
-    height: 30vw;
-    }
-    social, .social {
-    display: none;
-    }
-    .social-sm {
-    display: inherit;
+    font-size: 1.5em;
     }
 }
 
@@ -190,33 +158,54 @@ div#social-sm {
     display: none;
     }
     h1,.h1, title-super, .title-super {
-    margin: 2em 0 0 0;
+    margin: 2em 15vw 0 10vw;
     font-size: 24px; 
     width: 100%;
     text-align: center;
     }
     title-sub, .title-sub {
     width: 100%;
-    font-size: 16px;
     text-align: center;
-    margin: 1em auto 0;
+    margin: 0.5em 15vw 0 10vw;
     }
-    h2, .h2, h3, .h3 {
+    h2, .h2 {
     font-size: 22px;
     text-align: center;
     width: 100%;
     }
-    img-banner, .img-banner { 
-    width: 90vw;
+    cont-hdr, .cont-hdr {
+    margin: 0 15vw 0 18vw;
+    width: 100%;
+    }    
+    h3, .h3 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
     }
-    img-responsive, .img-responsive {
-    width: 70vw;
-    height: 30vw;
+    p, .p {
+    font-size: 16px;
     }
-    social, .social {
-    display: none;
+    img-banner, .img-banner {
+    max-width: 100%;
+    min-width: 80%;
+    margin: 0 15vw 0 13vw;
     }
-    .social-sm {
-    display: inherit;
+    specs-1, .specs-1 {
+    margin: 0 0 0 -6vw;
+    width: 300px;
+    text-align: center;
+    }
+    specs-2, .specs-2 {
+    margin: 0 0 0 -6vw;
+    width: 300px;
+    text-align: center;
+    }
+    specs-3, .specs-3 {
+    margin: 0 0 0 -6vw;
+    width: 300px;
+    text-align: center;
     }
 }
+
+
+
