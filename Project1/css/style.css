@@ -16,8 +16,6 @@ body {
 
 footer {
     text-align: right;
-    font-family: "Lato", sans-serif;
-    color: #747704;
     font-weight: 300;
     font-size: 1em;
     margin: 0 10vw;
@@ -41,64 +39,64 @@ footer {
     margin-top: 20px;
 }
 
-.hr {
+hr {
     display: block;
     margin: 0.5em auto 0.5em;
     border-style: solid;
-    border-width: 2px;
     border-color: #bcbbbb;
     color: #bcbbbb;
 } 
 
 @media screen and (max-width: 2000px) {
-    title-hd, .title-hd {
+    .title-hd {
     margin: 0 auto 0 5%;
     max-width: 70vw;
     }
     
-    img-banner, .img-banner {
+    .img-banner {
     margin: 0 5% auto 5%;
     max-width: 1110px;
     min-width: 400px;
     max-height: 17vw;
     }
     
-    .cont-hdr, cont-hdr {
+    .cont-hdr {
     margin: 0 5% auto 5%;
     max-width: 70vw;
     }
     
-    .cont-body, cont-body {
+    .cont-body {
     margin: 0 5% auto 4%;
     max-width: 70vw;
     }
 }
 
 @media screen and (max-width: 991px) {
-    h1, .h1, title-super, .title-super {
+    .h1,
+    .title-super {
     margin: -40px 0 0 20vw;
     font-size: 26px; 
     width: 80%;
     text-align: right;
     }
     
-    title-sub, .title-sub {
+    .title-sub {
     margin: 0 0 0 20vw;
     font-size: 20px;
     width: 80%;
     }
     
-    title-hd, .title-hd {
+    .title-hd {
     display: flex;
     flex-wrap: wrap;
     }
     
-    title-logo, .title-logo {
+    .title-logo {
     margin-top: 2.5em;
     width: 70%;
     }
     
-    .cont-body, cont-body {
+    .cont-body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -111,123 +109,127 @@ footer {
     margin: 0 15vw;
     }
     
-    .img-banner, img-banner {
+    .img-banner {
     margin: 0 auto 0 40px;
     max-width: 700px;
     min-width: 650px;
     }
     
-    h3, .h3, p, .p {
+    h3, 
+    p {
     font-size: 1.5em;
     }
 }   
 
 @media screen and (max-width: 765px) {
-    h1, .h1, title-super, .title-super {
+    .h1,
+    .title-super {
     margin: -50px 0 5px 20vw;
     font-size: 24px; 
     width: 100%;
     text-align: right;
     }
     
-    title-sub, .title-sub {
+    .title-sub {
     margin: 0 0 0 20vw;
     font-size: 18px;
     width: 100%;
     }
     
-    title-hd, .title-hd {
+    .title-hd {
     display: flex;
     flex-wrap: wrap;
     }
     
-    title-logo, .title-logo {
+    .title-logo {
     margin-top: 2.5em;
     width: 75%;
     }
     
-    .cont-body, cont-body {
+    .cont-body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     align-content: center;
     }
     
-    .specs {
-    max-width: 600px;
-    min-width: 350px;
-    margin: 0 15vw;
-    }
-    
-    .img-banner, img-banner {
+    .img-banner {
     margin: 0 auto 0 40px;
     max-width: 700px;
     min-width: 650px;
     }
     
-    h3, .h3, p, .p {
+    h3,
+    p {
     font-size: 1.5em;
     }    
 }
 
-@media screen and (max-width: 704px) {
-    title-logo, .title-logo {
-    display: none;
+@media screen and (max-width: 704px) {    
+    .title-hd {
+    display: flex;
+    flex-wrap: wrap;
     }
     
-    h1,.h1, title-super, .title-super {
-    margin: 2em 15vw 0 10vw;
-    font-size: 24px;
+    .title-logo {
+    width: 50%;
+    }
+    
+    .h1,
+    .title-super {
+    font-size: 20px;
     width: 100%;
-    text-align: center;
+    text-align: right;
     }
     
-    title-sub, .title-sub {
+    .title-sub {
     width: 100%;
-    text-align: center;
-    margin: 0.5em 15vw 0 10vw;
+    text-align: right;
+    margin: 0.5em 15vw 0 20vw;
     }
-    
-    h2, .h2 {
-    font-size: 22px;
-    text-align: center;
-    width: 100%;
-    }
-    
-    cont-hdr, .cont-hdr {
-    margin: 0 15vw 0 18vw;
-    width: 100%;
-    }
-    
-    h3, .h3 {
+        
+    .h2,
+    h2 {
     font-size: 20px;
     text-align: center;
     width: 100%;
     }
     
-    p, .p {
+    .cont-hdr {
+    margin: 0 15vw 0 18vw;
+    width: 100%;
+    }
+    
+    .h3,
+    h3{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    }
+    
+    p {
     font-size: 16px;
     }
     
-    img-banner, .img-banner {
+    .img-banner {
     max-width: 100%;
     min-width: 80%;
     margin: 0 15vw 0 13vw;
     }
     
-    specs-1, .specs-1 {
+    .specs-1 {
     margin: 0 0 0 -6vw;
     width: 300px;
     text-align: center;
     }
     
-    specs-2, .specs-2 {
+    .specs-2 {
     margin: 0 0 0 -6vw;
     width: 300px;
     text-align: center;
     }
     
-    specs-3, .specs-3 {
+    .specs-3 {
     margin: 0 0 0 -6vw;
     width: 300px;
     text-align: center;
